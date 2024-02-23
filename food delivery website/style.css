@@ -1,0 +1,193 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+#logo img{
+    padding: 23px 23px;
+    margin: 2px 9px;
+    height:60px;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.5;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:  1.3rem;
+}
+#navbar ul li a{
+    display:block;
+    padding:0px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:538px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./bg\ images/bg.jpg') no-repeat center center/cover; 
+    top:0px;
+    left:0px;
+    height:645px;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    /* font-family: 'Bree Serif', serif; */
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* service section */
+#services{
+    display: flex;
+    margin:25px;
+}
+#services .box{
+    border: 2px solid red;
+    margin:0px 15px;
+    margin-bottom: 25px;
+    padding:34px;
+    border-radius: 24px;
+    background-color: rgb(244, 235, 235);
+
+}
+#services .box img{
+    height:160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* clients section */
+#client-section{
+    position: relative; /* positon:relative; karne se vo section utni hi height leke jaha tak usme content h */
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url("./bg\ images/bg1.jpeg") no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:35px;
+}
+.client-item img{
+    height:124px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('./bg\ images/bg3.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: black;
+    color:white;
+    padding: 9px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    /* padding-top: 130px; */
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    padding:12px;
+}
+.btn{
+    font-size:1.2rem;
+    padding:6px 20px;
+    margin:20px;
+    border:2px solid white;
+    color:whitesmoke;
+    background-color: brown;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
